@@ -93,7 +93,21 @@ public class StudentGradeManagementSystem {
     }
 
     public void findStudent() {
+        if (count == 0) {
+            System.out.println("There are no students to search. Please add a student first.");
+            return;
+        }
 
+        System.out.print("Enter student name: ");
+        String searchForName = input.nextLine();
+        for (int i = 0; i < count; i++) {
+            if (names[i].equalsIgnoreCase(searchForName)) {
+                System.out.println(names[i] + "'s Grade: " + grades[i]);
+                return;
+            }
+        }
+
+        System.out.println("Student not found.");
     }
 
     public void calculateAverage() {
