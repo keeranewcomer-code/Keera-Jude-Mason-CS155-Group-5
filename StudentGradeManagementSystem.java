@@ -7,6 +7,7 @@ public class StudentGradeManagementSystem {
     private String[] names = new String[50];
     private int[] grades = new int[50];
     private int count = 0;
+
     public static void main(String[] args) {
         StudentGradeManagementSystem system = new StudentGradeManagementSystem();
         system.menuLoop();
@@ -80,7 +81,15 @@ public class StudentGradeManagementSystem {
     }
 
     public void displayStudents() {
+        if (count == 0) {
+            System.out.println("There are no students to display. Please add a student first.");
+            return;
+        }
 
+        System.out.println("List of Students and Grades: ");
+        for (int i = 0; i < count; i++) {
+            System.out.println(names[i] + " - " + grades[i]);
+        }
     }
 
     public void findStudent() {
