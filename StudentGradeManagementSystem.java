@@ -111,7 +111,20 @@ public class StudentGradeManagementSystem {
     }
 
     public void calculateAverage() {
+        if (count == 0) {
+            System.out.println("There are no grades to calculate. Please add a student first.");
+            return;
+        }
 
+        int total = 0
+
+        for (int i = 0; i < count; i++) {
+            total = total + grades[i];
+        }
+
+        double average = (double) total / count;
+
+        System.out.println("Class Average: " + average);
     }
 
     public void findHighestAndLowest() {
