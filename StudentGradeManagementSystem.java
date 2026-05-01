@@ -39,7 +39,13 @@ public class StudentGradeManagementSystem {
     }
 
     public static void showMenu() {
-
+        System.out.println("Welcome to Student Grade Management System");
+        System.out.println("1. Add Student and Grade");
+        System.out.println("2. Display All Students and Grades");
+        System.out.println("3. Find a Student's Grade");
+        System.out.println("4. Calculate Class Average");
+        System.out.println("5. Find Highest and Lowest Grades");
+        System.out.println("6. Exit the Program");
     }
 
     public static void addStudent() {
@@ -59,6 +65,6 @@ public class StudentGradeManagementSystem {
     }
 
     public static void findHighestAndLowest() {
-        
+
     }
 }
