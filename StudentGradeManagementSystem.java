@@ -128,6 +128,25 @@ public class StudentGradeManagementSystem {
     }
 
     public void findHighestAndLowest() {
+        if (count == 0) {
+            System.out.println("There are no grades to search. Please add a student first.");
+            return;
+        }
 
+        int highestGrade = 0;
+        int lowestGrade = 0;
+
+        for (int i = 0; i < count; i++) {
+            if (grades[i] > grades[highestGrade]) {
+                highestGrade = i;
+            }
+
+            if (grades[i] < grades[lowestGrade]) {
+                lowestGrade = i;
+            }
+        }
+
+        System.out.println("Highest Grade: " + names[highestGrade] + " - " + grades[highestIndex]);
+        System.out.println("Lowest Grade: " + names[lowestGrade] + " - " + grades[lowestGrade]);
     }
 }
