@@ -116,7 +116,7 @@ public class StudentGradeManagementSystem {
             return;
         }
 
-        int total = 0
+        int total = 0;
 
         for (int i = 0; i < count; i++) {
             total = total + grades[i];
@@ -146,7 +146,7 @@ public class StudentGradeManagementSystem {
             }
         }
 
-        System.out.println("Highest Grade: " + names[highestGrade] + " - " + grades[highestIndex]);
+        System.out.println("Highest Grade: " + names[highestGrade] + " - " + grades[highestGrade]);
         System.out.println("Lowest Grade: " + names[lowestGrade] + " - " + grades[lowestGrade]);
     }
 }
