@@ -1,9 +1,7 @@
 Project: Student Grade Management System
 
 Group Members:
-Mason Underwood
-Keera Newcomer
-Jude Phillips
+Mason Underwood, Keera Newcomer, Jude Phillips
 
 Project Description: This project is a java program that stores student names and grades in a system. The program allows the user to add students and their grades to the system, display all students
 and grades, find a specific student's grade, calculate the average of the grades in the system, find the highest and lowest grade in the system, and exit the program when you are done.
