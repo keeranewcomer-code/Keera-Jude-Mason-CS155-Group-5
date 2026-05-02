@@ -52,12 +52,14 @@ public class StudentGradeManagementSystem {
     // Displays a menu interface of options for the user
     public void showMenu() {
         System.out.println("Welcome to Student Grade Management System");
+        System.out.println("------------------------------------------");
         System.out.println("1. Add Student and Grade");
         System.out.println("2. Display All Students and Grades");
         System.out.println("3. Find a Student's Grade");
         System.out.println("4. Calculate Class Average");
         System.out.println("5. Find Highest and Lowest Grades");
         System.out.println("6. Exit the Program");
+        System.out.println("------------------------------------------");
     }
 
     // Allows the user to add a student and that student's grade to the system
